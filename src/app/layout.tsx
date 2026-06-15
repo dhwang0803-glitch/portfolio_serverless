@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { getProfile } from "@/content/profile";
-import { ContactInfo } from "@/components/ContactInfo";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { TopNav } from "@/components/TopNav";
 import "./globals.css";
 
 const profile = getProfile();
-
-// Applied before first paint so there is no light/dark flash on load.
-const THEME_INIT = `(function(){try{var t=localStorage.getItem('theme');
-if(!t){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}
-document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme='dark';}})();`;
 
 export const metadata: Metadata = {
   title: `${profile.name} — Portfolio`,
@@ -21,20 +14,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@500;700&family=Playfair+Display:ital,wght@1,500;1,600&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>
-        <header className="site-header">
-          <Link href="/" className="site-header__brand">
-            {profile.name}
-          </Link>
-          <ThemeToggle />
-        </header>
-        <main className="site-main">{children}</main>
-        <footer className="site-footer">
-          <ContactInfo email={profile.email} github={profile.github} />
-          <p className="site-footer__copy">© {profile.name}</p>
-        </footer>
+        <TopNav brand={profile.name} />
+        {children}
+        <footer className="footer">© {profile.name} · Portfolio</footer>
       </body>
     </html>
   );

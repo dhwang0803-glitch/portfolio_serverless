@@ -2,23 +2,69 @@ import { getProfile } from "@/content/profile";
 import { getAllProjects } from "@/content/projects";
 import { AboutSection } from "@/components/AboutSection";
 import { TechStack } from "@/components/TechStack";
-import { ProjectGallery } from "@/components/ProjectGallery";
+import { ProjectCard } from "@/components/ProjectCard";
+import { ContactInfo } from "@/components/ContactInfo";
 import { ResumeButton } from "@/components/ResumeButton";
+
+const HERO_TITLE = "Daewon Hwang's Portfolio";
+const HERO_SUB = "for AX Consultant";
 
 export default function HomePage() {
   const profile = getProfile();
   const projects = getAllProjects();
 
   return (
-    <div className="home">
-      <AboutSection profile={profile} />
-      {profile.resumeHref && (
-        <div className="home__resume">
-          <ResumeButton href={profile.resumeHref} />
+    <main>
+      {/* Hero banner — public/banner/hero.jpg */}
+      <section className="hero" style={{ backgroundImage: "url(/banner/hero.jpg)" }}>
+        <div className="hero__inner">
+          <h1 className="hero__title hero-serif">{HERO_TITLE}</h1>
+          <div className="hero__rule" />
+          <p className="hero__sub hero-serif">{HERO_SUB}</p>
         </div>
-      )}
-      <TechStack items={profile.techStack} />
-      <ProjectGallery projects={projects} />
-    </div>
+      </section>
+
+      {/* About */}
+      <section className="section" id="about">
+        <div className="container">
+          <p className="section__eyebrow">ABOUT</p>
+          <h2 className="section__title serif">소개</h2>
+          <div className="about">
+            <AboutSection profile={profile} />
+          </div>
+          <div className="tech">
+            <TechStack items={profile.techStack} />
+          </div>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section className="section" id="projects" style={{ background: "var(--paper-2)" }}>
+        <div className="container">
+          <p className="section__eyebrow">WORKS</p>
+          <h2 className="section__title serif">프로젝트</h2>
+          <p className="section__lead">
+            AI 워크플로우 자동화부터 NILM 에너지 진단, 멀티모달 추천까지 — 직접 설계하고 구현한 프로젝트입니다.
+          </p>
+          <div className="projects">
+            {projects.map((p, i) => (
+              <ProjectCard key={p.slug} project={p} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="section section--tight" id="contact">
+        <div className="container">
+          <p className="section__eyebrow">CONTACT</p>
+          <h2 className="section__title serif">연락처</h2>
+          <div className="contact">
+            <ContactInfo email={profile.email} github={profile.github} />
+            {profile.resumeHref && <ResumeButton href={profile.resumeHref} />}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

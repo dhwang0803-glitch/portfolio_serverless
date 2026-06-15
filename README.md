@@ -17,6 +17,16 @@ npm run build    # 정적 export → out/
 - **프로필/기술스택/연락처/이력서**: `content/profile.ts` 수정.
 - **이력서 PDF**: `public/resume/resume.pdf` 교체.
 
+## 이미지(배너) 넣기
+
+홈페이지형 블로그 디자인의 이미지는 아래 경로에 파일을 두면 자동으로 채워진다.
+(파일이 없으면 따뜻한 톤의 그라데이션 폴백이 보인다.)
+
+- **메인 배너(히어로)**: `public/banner/hero.jpg` — 권장 가로 1920px
+- **프로젝트 커버**(메뉴 썸네일 + 카드 + 상세 상단): `public/projects/<slug>/cover.jpg` — 권장 4:3, 가로 1200px+
+  - 예: `public/projects/flowit/cover.jpg`, `public/projects/watt-issue/cover.jpg`, `public/projects/lg-hellovision-vod/cover.jpg`
+  - 다른 경로를 쓰려면 `content/projects/<slug>/index.md` frontmatter에 `thumbnail: "/경로"` 지정
+
 ## 구조
 
 ```

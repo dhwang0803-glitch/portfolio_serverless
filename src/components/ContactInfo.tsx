@@ -12,13 +12,13 @@ export function ContactInfo({ email, github }: { email: string; github?: string 
   const mailtoHtml = `<a class="contact__link" href="mailto:${enc}">✉ ${enc}</a>`;
 
   return (
-    <div className="contact">
+    <>
       <span dangerouslySetInnerHTML={{ __html: mailtoHtml }} />
       {github && (
         <a className="contact__link" href={github} target="_blank" rel="noopener noreferrer">
-          ↗ GitHub
+          ↗ {github.replace(/^https?:\/\//, "")}
         </a>
       )}
-    </div>
+    </>
   );
 }

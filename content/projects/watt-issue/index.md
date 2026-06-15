@@ -4,9 +4,9 @@ summary: "집 전체 전력을 22종 가전별 사용량으로 분해(NILM)하�
 date: "2026-06"
 tags: ["NILM", "PyTorch", "FastAPI", "LangGraph", "Neo4j"]
 attachments:
-  - label: "발표자료 (PPTX)"
-    file: "watt-issue.pptx"
-    kind: "pptx"
+  - label: "발표자료 (PDF)"
+    file: "watt-issue.pdf"
+    kind: "pdf"
 ---
 
 ## 역할

@@ -4,9 +4,9 @@ summary: "자연어 요청을 AI가 워크플로우로 조립·검증·실행하
 date: "2026-06"
 tags: ["Python", "FastAPI", "LangGraph", "GraphRAG", "Clean Architecture"]
 attachments:
-  - label: "발표자료 (PPTX)"
-    file: "flowit.pptx"
-    kind: "pptx"
+  - label: "발표자료 (PDF)"
+    file: "flowit.pdf"
+    kind: "pdf"
 ---
 
 ## 역할
