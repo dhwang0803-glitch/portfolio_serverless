@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getProfile } from "@/content/profile";
 import { getAllProjects } from "@/content/projects";
 import { AboutSection } from "@/components/AboutSection";
@@ -6,11 +5,9 @@ import { TechStack } from "@/components/TechStack";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ContactInfo } from "@/components/ContactInfo";
 import { ResumeButton } from "@/components/ResumeButton";
-import { coverLayer, coverSrc } from "@/lib/placeholder";
 
-function shortLabel(title: string): string {
-  return title.split(/[—(·]/)[0].trim();
-}
+const HERO_TITLE = "Daewon Hwang's Portfolio";
+const HERO_SUB = "for AX Consultant";
 
 export default function HomePage() {
   const profile = getProfile();
@@ -18,30 +15,14 @@ export default function HomePage() {
 
   return (
     <main>
-      {/* Hero banner — /banner/hero.jpg 를 넣으면 채워지고, 없으면 톤 배경 */}
+      {/* Hero banner — public/banner/hero.jpg */}
       <section className="hero" style={{ backgroundImage: "url(/banner/hero.jpg)" }}>
         <div className="hero__inner">
-          <p className="hero__eyebrow">PORTFOLIO</p>
-          <h1 className="hero__title serif">{profile.name}</h1>
+          <h1 className="hero__title hero-serif">{HERO_TITLE}</h1>
           <div className="hero__rule" />
-          <p className="hero__sub">{profile.headline}</p>
+          <p className="hero__sub hero-serif">{HERO_SUB}</p>
         </div>
       </section>
-
-      {/* 배너 하단에 걸친 썸네일 메뉴 줄 */}
-      <div className="container">
-        <nav className="menu-row" aria-label="프로젝트 바로가기">
-          {projects.map((p, i) => (
-            <Link key={p.slug} href={`/projects/${p.slug}`} className="thumb">
-              <div
-                className="thumb__img"
-                style={{ backgroundImage: coverLayer(coverSrc(p.slug, p.thumbnail), i) }}
-              />
-              <div className="thumb__label">{shortLabel(p.title)}</div>
-            </Link>
-          ))}
-        </nav>
-      </div>
 
       {/* About */}
       <section className="section" id="about">

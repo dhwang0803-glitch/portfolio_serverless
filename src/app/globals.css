@@ -19,6 +19,13 @@
   font-family: "Noto Serif KR", Georgia, "Times New Roman", serif;
 }
 
+/* 우아한 세리프 이탤릭 (배너 타이틀용) */
+.hero-serif {
+  font-family: "Playfair Display", "Noto Serif KR", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -139,43 +146,6 @@ a {
   font-size: 1.02rem;
   font-weight: 300;
   opacity: 0.92;
-}
-
-/* ── Menu thumbnail row (overlaps banner bottom) ────────────── */
-.menu-row {
-  position: relative;
-  z-index: 2;
-  margin-top: -70px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  gap: 20px;
-  padding-bottom: 8px;
-}
-.thumb {
-  display: block;
-  text-align: center;
-}
-.thumb__img {
-  aspect-ratio: 4 / 3;
-  border-radius: 4px;
-  background-color: var(--paper-2);
-  background-size: cover;
-  background-position: center;
-  border: 4px solid #fff;
-  box-shadow: 0 12px 30px rgba(40, 33, 22, 0.18);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.thumb:hover .thumb__img {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 44px rgba(40, 33, 22, 0.26);
-}
-.thumb__label {
-  margin-top: 12px;
-  font-size: 0.84rem;
-  letter-spacing: 0.04em;
-  color: var(--ink-soft);
-  font-weight: 500;
 }
 
 /* ── Sections ───────────────────────────────────────────────── */
@@ -509,12 +479,6 @@ a {
   .nav__menu {
     gap: 18px;
   }
-  .menu-row {
-    grid-auto-flow: row;
-    grid-auto-columns: auto;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: -50px;
-  }
   .pcard {
     grid-template-columns: 1fr;
   }
@@ -531,9 +495,6 @@ a {
   }
   .nav__menu a {
     font-size: 0.78rem;
-  }
-  .menu-row {
-    grid-template-columns: 1fr;
   }
   .pdf__frame {
     height: 440px;
