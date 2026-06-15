@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { getProfile } from "@/content/profile";
-import { ContactInfo } from "@/components/ContactInfo";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { Sidebar } from "@/components/Sidebar";
 import "./globals.css";
 
 const profile = getProfile();
@@ -24,17 +22,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
       </head>
       <body>
-        <header className="site-header">
-          <Link href="/" className="site-header__brand">
-            {profile.name}
-          </Link>
-          <ThemeToggle />
-        </header>
-        <main className="site-main">{children}</main>
-        <footer className="site-footer">
-          <ContactInfo email={profile.email} github={profile.github} />
-          <p className="site-footer__copy">© {profile.name}</p>
-        </footer>
+        <div className="shell">
+          <Sidebar profile={profile} />
+          <div className="content">
+            {children}
+            <footer className="footer">© {profile.name} · Built with Next.js</footer>
+          </div>
+        </div>
       </body>
     </html>
   );

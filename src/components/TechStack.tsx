@@ -13,22 +13,19 @@ export function TechStack({ items }: { items: TechItem[] }) {
   }
 
   return (
-    <section className="tech">
-      <h2 className="section__title">기술 스택</h2>
-      <div className="tech__groups">
-        {[...groups.entries()].map(([category, list]) => (
-          <div key={category} className="tech__group">
-            <span className="tech__category">{category}</span>
-            <ul className="tech__badges">
-              {list.map((item) => (
-                <li key={item.name} className="tech__badge">
-                  {item.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
+    <div className="tech__groups">
+      {[...groups.entries()].map(([category, list]) => (
+        <div key={category} className="tech__group">
+          <span className="tech__category">{category}</span>
+          <ul className="tech__badges">
+            {list.map((item) => (
+              <li key={item.name} className="tech__badge">
+                {item.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
   );
 }
