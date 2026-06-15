@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
 import { getProfile } from "@/content/profile";
-import { Sidebar } from "@/components/Sidebar";
+import { TopNav } from "@/components/TopNav";
 import "./globals.css";
 
 const profile = getProfile();
-
-// Applied before first paint so there is no light/dark flash on load.
-const THEME_INIT = `(function(){try{var t=localStorage.getItem('theme');
-if(!t){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}
-document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme='dark';}})();`;
 
 export const metadata: Metadata = {
   title: `${profile.name} — Portfolio`,
@@ -19,16 +14,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>
-        <div className="shell">
-          <Sidebar profile={profile} />
-          <div className="content">
-            {children}
-            <footer className="footer">© {profile.name} · Built with Next.js</footer>
-          </div>
-        </div>
+        <TopNav brand={profile.name} />
+        {children}
+        <footer className="footer">© {profile.name} · Portfolio</footer>
       </body>
     </html>
   );

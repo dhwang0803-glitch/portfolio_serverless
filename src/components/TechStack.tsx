@@ -3,7 +3,7 @@ import type { TechItem } from "@/domain";
 export function TechStack({ items }: { items: TechItem[] }) {
   if (items.length === 0) return null;
 
-  // 카테고리별 그룹화 (순서 유지).
+  // 카테고리별 그룹화 (순서 유지). .tech 컨테이너의 직접 자식으로 렌더.
   const groups = new Map<string, TechItem[]>();
   for (const item of items) {
     const key = item.category ?? "기타";
@@ -13,7 +13,7 @@ export function TechStack({ items }: { items: TechItem[] }) {
   }
 
   return (
-    <div className="tech__groups">
+    <>
       {[...groups.entries()].map(([category, list]) => (
         <div key={category} className="tech__group">
           <span className="tech__category">{category}</span>
@@ -26,6 +26,6 @@ export function TechStack({ items }: { items: TechItem[] }) {
           </ul>
         </div>
       ))}
-    </div>
+    </>
   );
 }
