@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Git LFS (core.hooksPath가 .githooks이므로 LFS 훅을 여기서 직접 호출 — 조기 종료 전에 실행)
+command -v git-lfs >/dev/null 2>&1 && git lfs post-checkout "$@"
+#
 # .githooks/post-checkout  —  installed by AI_Native_Kit
 #
 # 새 브랜치 체크아웃 시 자동으로:
