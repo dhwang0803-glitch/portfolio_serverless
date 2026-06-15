@@ -1,14 +1,15 @@
 :root {
-  --paper: #f3efe7;
-  --paper-2: #ece6da;
-  --card: #fbf9f5;
-  --ink: #2a2620;
-  --ink-soft: #4b453c;
-  --muted: #877f72;
-  --faint: #a89e8e;
-  --line: #e2dacc;
-  --line-strong: #d4c9b6;
-  --accent: #7c6a4f;
+  --paper: #eef6fb;
+  --paper-2: #ddecf5;
+  --card: #ffffff;
+  --ink: #0f3252;
+  --ink-soft: #2c5274;
+  --muted: #5d7c93;
+  --faint: #94afc1;
+  --line: #d2e3ef;
+  --line-strong: #b8d2e3;
+  --accent: #1379cf;
+  --accent-2: #19a7c4;
   --max: 1120px;
   --nav-h: 64px;
   font-family: "Noto Sans KR", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -95,7 +96,7 @@ a {
   place-items: center;
   text-align: center;
   color: #fff;
-  background-color: #3a3127;
+  background-color: #0e5aa6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,7 +105,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(20, 17, 12, 0.35), rgba(20, 17, 12, 0.55));
+  background: linear-gradient(180deg, rgba(6, 33, 61, 0.34), rgba(6, 40, 72, 0.5));
 }
 .hero__inner {
   position: relative;
@@ -364,7 +365,7 @@ a {
 /* ── Detail (article) ───────────────────────────────────────── */
 .detail__cover {
   min-height: 46vh;
-  background-color: #3a3127;
+  background-color: #0e5aa6;
   background-size: cover;
   background-position: center;
   display: grid;
@@ -378,7 +379,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(20, 17, 12, 0.25), rgba(20, 17, 12, 0.6));
+  background: linear-gradient(180deg, rgba(6, 33, 61, 0.25), rgba(6, 40, 72, 0.6));
 }
 .detail__cover-inner {
   position: relative;

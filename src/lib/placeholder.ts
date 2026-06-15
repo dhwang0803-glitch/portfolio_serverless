@@ -1,10 +1,10 @@
 // 배너/커버 이미지를 아직 제공하지 않았을 때 보일 따뜻한 뉴트럴 그라데이션 폴백.
 // 실제 이미지가 들어오면 url() 레이어가 위에 깔려 그라데이션을 덮는다.
 const GRADIENTS = [
-  "linear-gradient(135deg, #b7a489 0%, #8c7a5f 100%)",
-  "linear-gradient(135deg, #a9a392 0%, #6f6a59 100%)",
-  "linear-gradient(135deg, #c2ad93 0%, #97785c 100%)",
-  "linear-gradient(135deg, #9aa097 0%, #6b6f63 100%)",
+  "linear-gradient(135deg, #2b8fd6 0%, #0e5aa6 100%)",
+  "linear-gradient(135deg, #43b6cb 0%, #1f7fb0 100%)",
+  "linear-gradient(135deg, #6cc6dc 0%, #2a93c0 100%)",
+  "linear-gradient(135deg, #79b4e2 0%, #2f6fb6 100%)",
 ];
 
 export function placeholder(index: number): string {
