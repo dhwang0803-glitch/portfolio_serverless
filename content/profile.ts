@@ -12,18 +12,42 @@ export const profile: Profile = {
   email: "dhwang0803@gmail.com",
   github: "https://github.com/dhwang0803",
   resumeHref: "/resume/resume.pdf",
+  // 카테고리 순서가 화면 표시 순서 (TechStack은 등장 순서를 유지).
   techStack: [
-    { name: "Python", category: "Language" },
-    { name: "TypeScript", category: "Language" },
+    // 1. AI Engineering — 모델링·데이터 분석
+    { name: "PyTorch", category: "AI Engineering" },
+    { name: "CNN", category: "AI Engineering" },
+    { name: "TDA", category: "AI Engineering" },
+    { name: "파인튜닝", category: "AI Engineering" },
+    { name: "YOLO11 · CLIP (비전)", category: "AI Engineering" },
+
+    // 2. AI Software — RAG·GraphRAG 등 LLM 활용 서비스
+    { name: "LangGraph", category: "AI Software" },
+    { name: "GraphRAG", category: "AI Software" },
+    { name: "RAG (pgvector)", category: "AI Software" },
+    { name: "멀티에이전트 오케스트레이션", category: "AI Software" },
+
+    // 3. AI Native Engineering — 프롬프트·컨텍스트·하네스 엔지니어링
+    { name: "프롬프트 엔지니어링", category: "AI Native Engineering" },
+    { name: "컨텍스트 엔지니어링", category: "AI Native Engineering" },
+    { name: "하네스 엔지니어링", category: "AI Native Engineering" },
+    { name: "클린 아키텍처", category: "AI Native Engineering" },
+    { name: "MCP", category: "AI Native Engineering" },
+    { name: "TDD 에이전트 자동화", category: "AI Native Engineering" },
+
+    // 4. Backend
+    { name: "Python", category: "Backend" },
     { name: "FastAPI", category: "Backend" },
-    { name: "LangGraph", category: "AI/Agent" },
-    { name: "GraphRAG / Neo4j", category: "AI/Agent" },
-    { name: "PyTorch", category: "ML" },
-    { name: "CLIP / YOLO", category: "ML" },
+    { name: "PostgreSQL + pgvector", category: "Backend" },
+    { name: "TimescaleDB", category: "Backend" },
+    { name: "Neo4j AuraDB", category: "Backend" },
+    { name: "Docker · Modal GPU", category: "Backend" },
+    { name: "GCP (Cloud Run/SQL)", category: "Backend" },
+
+    // 5. Frontend
     { name: "Next.js", category: "Frontend" },
     { name: "React", category: "Frontend" },
-    { name: "PostgreSQL + pgvector", category: "Data" },
-    { name: "GCP (Cloud Run)", category: "Infra" },
-    { name: "Docker", category: "Infra" },
+    { name: "TypeScript", category: "Frontend" },
+    { name: "Tailwind CSS", category: "Frontend" },
   ],
 };
