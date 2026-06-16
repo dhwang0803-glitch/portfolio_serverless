@@ -32,6 +32,17 @@ export default function HomePage() {
           <div className="about">
             <AboutSection profile={profile} />
           </div>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section className="section" id="skills" style={{ background: "var(--paper-2)" }}>
+        <div className="container">
+          <p className="section__eyebrow">SKILLS</p>
+          <h2 className="section__title serif">기술 스택</h2>
+          <p className="section__lead">
+            언어부터 AI/에이전트·ML, 백엔드·프론트엔드, 데이터·인프라까지 — 실제 프로젝트에서 사용한 도구들입니다.
+          </p>
           <div className="tech">
             <TechStack items={profile.techStack} />
           </div>
@@ -39,7 +50,7 @@ export default function HomePage() {
       </section>
 
       {/* Projects */}
-      <section className="section" id="projects" style={{ background: "var(--paper-2)" }}>
+      <section className="section" id="projects">
         <div className="container">
           <p className="section__eyebrow">WORKS</p>
           <h2 className="section__title serif">프로젝트</h2>
