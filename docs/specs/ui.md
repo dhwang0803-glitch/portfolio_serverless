@@ -12,7 +12,7 @@
 | 컴포넌트 | props | 역할 |
 |---------|-------|------|
 | `AboutSection` | `{ profile: Profile }` | 이름·한줄소개·자기소개 |
-| `TechStack` | `{ items: TechItem[] }` | 기술스택 뱃지(카테고리별 그룹) |
+| `TechStack` | `{ items: TechItem[] }` | 기술스택(카테고리별 가로 배너 행 — 카테고리 라벨 + 뱃지) |
 | `ProjectCard` | `{ project: ProjectSummary }` | 갤러리 1장 요약 카드 (→ `/projects/<slug>` 링크) |
 | `ProjectGallery` | `{ projects: ProjectSummary[] }` | 카드 그리드 |
 | `ProjectDetail` | `{ project: Project }` | 상세 본문(마크다운) + 첨부 + GitHub 링크 |

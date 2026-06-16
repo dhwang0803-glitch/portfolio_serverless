@@ -41,7 +41,7 @@ export default function HomePage() {
           <p className="section__eyebrow">SKILLS</p>
           <h2 className="section__title serif">기술 스택</h2>
           <p className="section__lead">
-            언어부터 AI/에이전트·ML, 백엔드·프론트엔드, 데이터·인프라까지 — 실제 프로젝트에서 사용한 도구들입니다.
+            AI 모델링부터 LLM 서비스, AI Native 엔지니어링, 그리고 이를 떠받치는 백엔드·프론트엔드까지 — 실제 프로젝트에서 사용한 역량입니다.
           </p>
           <div className="tech">
             <TechStack items={profile.techStack} />
