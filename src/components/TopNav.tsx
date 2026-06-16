@@ -9,6 +9,7 @@ export function TopNav({ brand }: { brand: string }) {
         </Link>
         <nav className="nav__menu">
           <Link href="/#about">About</Link>
+          <Link href="/#skills">Skills</Link>
           <Link href="/#projects">Projects</Link>
           <Link href="/#contact">Contact</Link>
         </nav>
