@@ -13,6 +13,7 @@
 |---------|-------|------|
 | `AboutSection` | `{ profile: Profile }` | 이름·한줄소개·자기소개 |
 | `TechStack` | `{ items: TechItem[] }` | 기술스택(카테고리별 가로 배너 행 — 카테고리 라벨 + 뱃지) |
+| `Certifications` | `{ items: Certification[] }` | 자격증 리스트(취득연월 · 자격증명 · 발급기관) |
 | `ProjectCard` | `{ project: ProjectSummary }` | 갤러리 1장 요약 카드 (→ `/projects/<slug>` 링크) |
 | `ProjectGallery` | `{ projects: ProjectSummary[] }` | 카드 그리드 |
 | `ProjectDetail` | `{ project: Project }` | 상세 본문(마크다운) + 첨부 + GitHub 링크 |
