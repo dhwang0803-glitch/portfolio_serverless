@@ -4,6 +4,7 @@ summary: "ALS 협업필터링 + CLIP/SBERT 멀티모달 유사도로 하이브�
 date: "2026-04"
 github: "https://github.com/dhwang0803-glitch/dxshcool"
 tags: ["Python", "FastAPI", "Next.js", "CLIP", "YOLO", "ALS"]
+summarySlide: "lg-hellovision-vod-1page.pdf"
 attachments:
   - label: "최종 발표자료 (PDF)"
     file: "lg-hellovision-vod.pdf"

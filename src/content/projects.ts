@@ -71,5 +71,15 @@ export function getProject(slug: string): Project {
     href: `/projects/${slug}/assets/${a.file}`,
     kind: a.kind ?? inferKind(a.file),
   }));
-  return { ...toSummary(slug, data), body, attachments };
+
+  // summarySlide: 1장 요약 슬라이드 파일명(assets/ 내) → 본문 위 인라인 노출.
+  const summarySlide: Attachment | undefined = data.summarySlide
+    ? {
+        label: "1장 요약",
+        href: `/projects/${slug}/assets/${String(data.summarySlide)}`,
+        kind: inferKind(String(data.summarySlide)),
+      }
+    : undefined;
+
+  return { ...toSummary(slug, data), body, summarySlide, attachments };
 }

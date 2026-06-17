@@ -3,6 +3,7 @@ title: "FlowIt — Multi-Agent 에이전틱 워크플로우 자동화 플랫폼"
 summary: "자연어 요청을 AI가 워크플로우로 조립·검증·실행하는 멀티에이전트 플랫폼. 암묵지를 재사용 가능한 스킬로 자산화하고, 온톨로지 GraphRAG로 노드 선택 품질을 보장한다."
 date: "2026-06"
 tags: ["Python", "FastAPI", "LangGraph", "GraphRAG", "Clean Architecture"]
+summarySlide: "flowit-1page.pdf"
 attachments:
   - label: "발표자료 (PDF)"
     file: "flowit.pdf"
