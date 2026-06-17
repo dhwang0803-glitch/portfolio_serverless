@@ -16,38 +16,53 @@ export const profile: Profile = {
   techStack: [
     // 1. AI Engineering — 모델링·데이터 분석
     { name: "PyTorch", category: "AI Engineering" },
-    { name: "CNN", category: "AI Engineering" },
-    { name: "TDA", category: "AI Engineering" },
-    { name: "파인튜닝", category: "AI Engineering" },
-    { name: "YOLO11 · CLIP (비전)", category: "AI Engineering" },
+    { name: "NILM 시계열 분해", category: "AI Engineering" },
+    { name: "CNN · TDA", category: "AI Engineering" },
 
     // 2. AI Software — RAG·GraphRAG 등 LLM 활용 서비스
-    { name: "LangGraph", category: "AI Software" },
-    { name: "GraphRAG", category: "AI Software" },
-    { name: "RAG (pgvector)", category: "AI Software" },
-    { name: "멀티에이전트 오케스트레이션", category: "AI Software" },
+    { name: "RAG · GraphRAG", category: "AI Software" },
+    { name: "임베딩 (BGE-M3 · SBERT · CLIP)", category: "AI Software" },
+    { name: "멀티에이전트 · 워크플로우 자동화 (LangGraph)", category: "AI Software" },
+    { name: "AI 평가 (LLM-as-Judge)", category: "AI Software" },
+    { name: "LLM 서빙 (vLLM)", category: "AI Software" },
 
     // 3. AI Native Engineering — 프롬프트·컨텍스트·하네스 엔지니어링
     { name: "프롬프트 엔지니어링", category: "AI Native Engineering" },
     { name: "컨텍스트 엔지니어링", category: "AI Native Engineering" },
     { name: "하네스 엔지니어링", category: "AI Native Engineering" },
-    { name: "클린 아키텍처", category: "AI Native Engineering" },
     { name: "MCP", category: "AI Native Engineering" },
-    { name: "TDD 에이전트 자동화", category: "AI Native Engineering" },
+    { name: "클린 아키텍처", category: "AI Native Engineering" },
 
-    // 4. Backend
-    { name: "Python", category: "Backend" },
-    { name: "FastAPI", category: "Backend" },
-    { name: "PostgreSQL + pgvector", category: "Backend" },
-    { name: "TimescaleDB", category: "Backend" },
-    { name: "Neo4j AuraDB", category: "Backend" },
-    { name: "Docker · Modal GPU", category: "Backend" },
-    { name: "GCP (Cloud Run/SQL)", category: "Backend" },
+    // 4. 백엔드
+    { name: "Python", category: "백엔드" },
+    { name: "FastAPI", category: "백엔드" },
+    { name: "Celery", category: "백엔드" },
+    { name: "Redis", category: "백엔드" },
+    { name: "PostgreSQL", category: "백엔드" },
+    { name: "벡터DB (pgvector · Neo4j)", category: "백엔드" },
+    { name: "TimescaleDB", category: "백엔드" },
 
-    // 5. Frontend
-    { name: "Next.js", category: "Frontend" },
-    { name: "React", category: "Frontend" },
-    { name: "TypeScript", category: "Frontend" },
-    { name: "Tailwind CSS", category: "Frontend" },
+    // 5. 프론트엔드
+    { name: "Next.js", category: "프론트엔드" },
+    { name: "TypeScript", category: "프론트엔드" },
+    { name: "React", category: "프론트엔드" },
+    { name: "Tailwind CSS", category: "프론트엔드" },
+
+    // 6. 인프라
+    { name: "Docker", category: "인프라" },
+    { name: "Google Cloud Platform", category: "인프라" },
+    { name: "Terraform", category: "인프라" },
+
+    // 7. 품질·테스트
+    { name: "Playwright E2E", category: "품질·테스트" },
+    { name: "테스트 자동화", category: "품질·테스트" },
+
+    // 8. Soft Skills
+    { name: "AI PM · 프로젝트 리딩", category: "Soft Skills" },
+    { name: "요구사항 분석", category: "Soft Skills" },
+    { name: "고객 대면 문제 해결", category: "Soft Skills" },
+
+    // 9. 자격증
+    { name: "ISTQB FL", category: "자격증" },
   ],
 };
