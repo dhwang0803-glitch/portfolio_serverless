@@ -3,6 +3,7 @@ title: "와트이쓔 — NILM 기반 실시간 에너지 진단 AI 에이전트"
 summary: "집 전체 전력을 22종 가전별 사용량으로 분해(NILM)하고, 멀티에이전트 AI가 절감 행동과 캐시백 미션을 제안하는 자율 에너지 진단 시스템. 2026 기후에너지환경부 AX 아이디어 경진대회 출품작."
 date: "2026-06"
 tags: ["NILM", "PyTorch", "FastAPI", "LangGraph", "Neo4j"]
+summarySlide: "watt-issue-1page.pdf"
 attachments:
   - label: "발표자료 (PDF)"
     file: "watt-issue.pdf"

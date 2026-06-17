@@ -30,6 +30,7 @@ date: "YYYY-MM"
 thumbnail?: string
 github?: string
 tags?: string[]
+summarySlide?: string                    # 1장 요약 슬라이드 파일명(assets/ 내) — 본문 위 인라인 노출
 attachments?: [{ label, file, kind }]   # file = assets/ 내 파일명
 ```
 

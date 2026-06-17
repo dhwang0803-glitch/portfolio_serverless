@@ -35,6 +35,12 @@ export function ProjectDetail({ project, index = 0 }: { project: Project; index?
           )}
         </div>
 
+        {project.summarySlide?.kind === "pdf" && (
+          <section className="detail__summary-slide">
+            <PdfViewer href={project.summarySlide.href} title={`${project.title} 1장 요약`} />
+          </section>
+        )}
+
         <div className="markdown">
           <Markdown source={project.body} />
         </div>

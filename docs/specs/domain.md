@@ -36,6 +36,7 @@ export interface ProjectSummary {
 // 상세 페이지용 (요약 + 본문 + 첨부)
 export interface Project extends ProjectSummary {
   body: string;           // 마크다운 본문 (상세)
+  summarySlide?: Attachment; // 1장 요약 슬라이드 — 본문 위 인라인 노출
   attachments: Attachment[];
 }
 ```
