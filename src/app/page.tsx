@@ -3,6 +3,7 @@ import { getAllProjects } from "@/content/projects";
 import { AboutSection } from "@/components/AboutSection";
 import { TechStack } from "@/components/TechStack";
 import { ProjectCard } from "@/components/ProjectCard";
+import { Certifications } from "@/components/Certifications";
 import { ContactInfo } from "@/components/ContactInfo";
 import { ResumeButton } from "@/components/ResumeButton";
 
@@ -64,6 +65,17 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Certifications */}
+      {profile.certifications && profile.certifications.length > 0 && (
+        <section className="section" id="certifications" style={{ background: "var(--paper-2)" }}>
+          <div className="container">
+            <p className="section__eyebrow">CERTIFICATIONS</p>
+            <h2 className="section__title serif">자격증</h2>
+            <Certifications items={profile.certifications} />
+          </div>
+        </section>
+      )}
 
       {/* Contact */}
       <section className="section section--tight" id="contact">

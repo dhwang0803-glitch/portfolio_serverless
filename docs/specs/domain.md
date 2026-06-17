@@ -49,6 +49,12 @@ export interface TechItem {
   category?: string;      // 예: "Frontend", "Infra"
 }
 
+export interface Certification {
+  date: string;           // "YYYY.MM" 취득연월
+  name: string;           // 자격증명
+  issuer: string;         // 발급기관
+}
+
 export interface Profile {
   name: string;
   headline: string;       // 한 줄 소개
@@ -57,6 +63,7 @@ export interface Profile {
   github?: string;
   resumeHref?: string;    // 이력서 다운로드 경로 (예: /resume/resume.pdf)
   techStack: TechItem[];
+  certifications?: Certification[]; // 자격증 (최신순)
 }
 ```
 

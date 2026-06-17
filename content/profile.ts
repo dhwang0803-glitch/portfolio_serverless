@@ -30,6 +30,8 @@ export const profile: Profile = {
     { name: "프롬프트 엔지니어링", category: "AI Native Engineering" },
     { name: "컨텍스트 엔지니어링", category: "AI Native Engineering" },
     { name: "하네스 엔지니어링", category: "AI Native Engineering" },
+    { name: "Spec 주도 개발 (SDD)", category: "AI Native Engineering" },
+    { name: "TDD (Red-Green-Refactor)", category: "AI Native Engineering" },
     { name: "MCP", category: "AI Native Engineering" },
     { name: "클린 아키텍처", category: "AI Native Engineering" },
 
@@ -61,8 +63,12 @@ export const profile: Profile = {
     { name: "AI PM · 프로젝트 리딩", category: "Soft Skills" },
     { name: "요구사항 분석", category: "Soft Skills" },
     { name: "고객 대면 문제 해결", category: "Soft Skills" },
-
-    // 9. 자격증
-    { name: "ISTQB FL", category: "자격증" },
+  ],
+  // 자격증 (최신순) — 별도 Certifications 섹션에서 렌더.
+  certifications: [
+    { date: "2026.03", name: "데이터분석 준전문가 (ADsP)", issuer: "한국데이터베이스진흥원" },
+    { date: "2025.12", name: "정보처리기사", issuer: "한국산업인력공단" },
+    { date: "2024.04", name: "ISTQB Foundation Level", issuer: "International Software Testing" },
+    { date: "2023.02", name: "IELTS 6.5", issuer: "어학 · 글로벌 커뮤니케이션" },
   ],
 };
