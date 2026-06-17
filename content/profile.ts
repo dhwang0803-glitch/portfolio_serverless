@@ -59,7 +59,14 @@ export const profile: Profile = {
     { name: "Playwright E2E", category: "품질·테스트" },
     { name: "테스트 자동화", category: "품질·테스트" },
 
-    // 8. Soft Skills
+    // 8. 협업 툴
+    { name: "Git · GitHub", category: "협업 툴" },
+    { name: "Slack", category: "협업 툴" },
+    { name: "Jira", category: "협업 툴" },
+    { name: "Notion", category: "협업 툴" },
+    { name: "Figma", category: "협업 툴" },
+
+    // 9. Soft Skills
     { name: "AI PM · 프로젝트 리딩", category: "Soft Skills" },
     { name: "요구사항 분석", category: "Soft Skills" },
     { name: "고객 대면 문제 해결", category: "Soft Skills" },
