@@ -64,7 +64,6 @@ export const profile: Profile = {
     { name: "Slack", category: "협업 툴" },
     { name: "Jira", category: "협업 툴" },
     { name: "Notion", category: "협업 툴" },
-    { name: "Figma", category: "협업 툴" },
 
     // 9. Soft Skills
     { name: "AI PM · 프로젝트 리딩", category: "Soft Skills" },
