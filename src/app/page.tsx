@@ -42,10 +42,19 @@ export default function HomePage() {
           <p className="section__eyebrow">SKILLS</p>
           <h2 className="section__title serif">기술 스택</h2>
           <p className="section__lead">
-            AI 모델링·LLM 서비스·AI Native 엔지니어링부터 이를 떠받치는 백엔드·인프라, 그리고 프로젝트를 이끄는 PM·문제 해결 역량까지 — 실제 프로젝트에서 검증한 AX 역량입니다.
+            AI 모델링·LLM 서비스·AI Native 엔지니어링부터 프로젝트를 이끄는 PM·문제 해결 역량까지 — 실제 프로젝트에서 검증한 AX 역량입니다.
           </p>
           <div className="tech">
-            <TechStack items={profile.techStack} />
+            <TechStack items={profile.techStack.filter((t) => t.tier !== "ai-collab")} />
+          </div>
+
+          <h3 className="tech__tier-title">AI 에이전트 협업 개발 기술</h3>
+          <p className="tech__tier-desc">
+            Claude Code 등 AI 코딩 에이전트와 협업하여 프로젝트에 적용한 기술입니다.
+            기획·설계·코드 리뷰를 직접 수행하고, 구현은 AI 에이전트가 담당했습니다.
+          </p>
+          <div className="tech">
+            <TechStack items={profile.techStack.filter((t) => t.tier === "ai-collab")} />
           </div>
         </div>
       </section>

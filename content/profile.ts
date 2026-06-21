@@ -35,29 +35,29 @@ export const profile: Profile = {
     { name: "MCP", category: "AI Native Engineering" },
     { name: "클린 아키텍처", category: "AI Native Engineering" },
 
-    // 4. 백엔드
-    { name: "Python", category: "백엔드" },
-    { name: "FastAPI", category: "백엔드" },
-    { name: "Celery", category: "백엔드" },
-    { name: "Redis", category: "백엔드" },
-    { name: "PostgreSQL", category: "백엔드" },
-    { name: "벡터DB (pgvector · Neo4j)", category: "백엔드" },
-    { name: "TimescaleDB", category: "백엔드" },
+    // 4. 백엔드 (AI 협업)
+    { name: "Python", category: "백엔드", tier: "ai-collab" },
+    { name: "FastAPI", category: "백엔드", tier: "ai-collab" },
+    { name: "Celery", category: "백엔드", tier: "ai-collab" },
+    { name: "Redis", category: "백엔드", tier: "ai-collab" },
+    { name: "PostgreSQL", category: "백엔드", tier: "ai-collab" },
+    { name: "벡터DB (pgvector · Neo4j)", category: "백엔드", tier: "ai-collab" },
+    { name: "TimescaleDB", category: "백엔드", tier: "ai-collab" },
 
-    // 5. 프론트엔드
-    { name: "Next.js", category: "프론트엔드" },
-    { name: "TypeScript", category: "프론트엔드" },
-    { name: "React", category: "프론트엔드" },
-    { name: "Tailwind CSS", category: "프론트엔드" },
+    // 5. 프론트엔드 (AI 협업)
+    { name: "Next.js", category: "프론트엔드", tier: "ai-collab" },
+    { name: "TypeScript", category: "프론트엔드", tier: "ai-collab" },
+    { name: "React", category: "프론트엔드", tier: "ai-collab" },
+    { name: "Tailwind CSS", category: "프론트엔드", tier: "ai-collab" },
 
-    // 6. 인프라
-    { name: "Docker", category: "인프라" },
-    { name: "Google Cloud Platform", category: "인프라" },
-    { name: "Terraform", category: "인프라" },
+    // 6. 인프라 (AI 협업)
+    { name: "Docker", category: "인프라", tier: "ai-collab" },
+    { name: "Google Cloud Platform", category: "인프라", tier: "ai-collab" },
+    { name: "Terraform", category: "인프라", tier: "ai-collab" },
 
-    // 7. 품질·테스트
-    { name: "Playwright E2E", category: "품질·테스트" },
-    { name: "테스트 자동화", category: "품질·테스트" },
+    // 7. 품질·테스트 (AI 협업)
+    { name: "Playwright E2E", category: "품질·테스트", tier: "ai-collab" },
+    { name: "테스트 자동화", category: "품질·테스트", tier: "ai-collab" },
 
     // 8. 협업 툴
     { name: "Git · GitHub", category: "협업 툴" },
