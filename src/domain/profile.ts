@@ -3,6 +3,7 @@
 export interface TechItem {
   name: string;
   category?: string; // 예: "Frontend", "Backend", "Infra"
+  tier?: "core" | "ai-collab";
 }
 
 export interface Certification {
