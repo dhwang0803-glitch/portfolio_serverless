@@ -39,7 +39,7 @@ docs/           PRD · 위키(context) · 구현명세(specs)
 ```
 
 설계 배경과 규칙은 `CLAUDE.md`, `docs/PRD.md`, `docs/context/`, `docs/specs/` 참조.
-AI-Native Engineering 하니스는 [AI_Native_Kit](https://github.com/dhwang0803/AI_Native_Kit)로 세팅됨.
+AI-Native Engineering 하니스는 [AI_Native_Kit](https://github.com/dhwang0803-glitch/AI_Native_Kit)로 세팅됨.
 
 ## 배포
 

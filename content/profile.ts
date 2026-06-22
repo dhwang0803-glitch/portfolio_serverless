@@ -10,7 +10,7 @@ export const profile: Profile = {
 
 백엔드·ML·프론트엔드를 가로지르고, Clean Architecture와 AI Native 엔지니어링으로 품질을 보장하는 방식을 좋아합니다. 고객의 문제를 데이터로 진단하고 비전문가와 개발자를 잇는 일 — 그게 제가 AX에서 하고 싶은 일입니다.`,
   email: "dhwang0803@gmail.com",
-  github: "https://github.com/dhwang0803",
+  github: "https://github.com/dhwang0803-glitch",
   resumeHref: "/resume/resume.pdf",
   // 카테고리 순서가 화면 표시 순서 (TechStack은 등장 순서를 유지).
   techStack: [
