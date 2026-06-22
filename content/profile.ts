@@ -41,7 +41,8 @@ export const profile: Profile = {
     { name: "Celery", category: "백엔드", tier: "ai-collab" },
     { name: "Redis", category: "백엔드", tier: "ai-collab" },
     { name: "PostgreSQL", category: "백엔드", tier: "ai-collab" },
-    { name: "벡터DB (pgvector · Neo4j)", category: "백엔드", tier: "ai-collab" },
+    { name: "pgvector (벡터DB)", category: "백엔드", tier: "ai-collab" },
+    { name: "Neo4j (Graph DB)", category: "백엔드", tier: "ai-collab" },
     { name: "TimescaleDB", category: "백엔드", tier: "ai-collab" },
 
     // 5. 프론트엔드 (AI 협업)
