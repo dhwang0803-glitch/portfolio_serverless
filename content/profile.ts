@@ -72,9 +72,9 @@ export const profile: Profile = {
   ],
   // 자격증 (최신순) — 별도 Certifications 섹션에서 렌더.
   certifications: [
-    { date: "2026.03", name: "데이터분석 준전문가 (ADsP)", issuer: "한국데이터베이스진흥원" },
+    { date: "2026.03", name: "데이터분석 준전문가 (ADsP)", issuer: "한국데이터산업진흥원" },
     { date: "2025.12", name: "정보처리기사", issuer: "한국산업인력공단" },
-    { date: "2024.04", name: "ISTQB Foundation Level", issuer: "International Software Testing" },
+    { date: "2024.04", name: "ISTQB Foundation Level", issuer: "International Software Testing Qualifications Board" },
     { date: "2023.02", name: "IELTS 6.5", issuer: "어학 · 글로벌 커뮤니케이션" },
   ],
 };
