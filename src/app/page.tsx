@@ -8,7 +8,7 @@ import { ContactInfo } from "@/components/ContactInfo";
 import { ResumeButton } from "@/components/ResumeButton";
 
 const HERO_TITLE = "Daewon Hwang's Portfolio";
-const HERO_SUB = "for AX Consultant";
+const HERO_SUB = "for AX Engineer";
 
 export default function HomePage() {
   const profile = getProfile();
