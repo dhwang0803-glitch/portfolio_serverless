@@ -576,6 +576,14 @@ a {
   text-decoration: underline;
   word-break: break-all;
 }
+.markdown img {
+  display: block;
+  width: min(1140px, 94vw);
+  margin: 1.6rem 0 1.6rem 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(15, 50, 82, 0.1);
+}
 
 /* ── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 820px) {
